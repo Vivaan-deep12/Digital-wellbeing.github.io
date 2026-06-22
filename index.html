@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Digital Edge — Every Click Creates Your Digital Identity</title>
+<meta name="description" content="Learn Digital Wellbeing, Cyber Safety, and Digital Citizenship through interactive stories, activities, and games." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+<nav class="nav">
+  <div class="nav-inner">
+    <a class="logo" href="index.html">◆ Digital Edge</a>
+    <button class="nav-toggle" aria-label="Open menu">☰</button>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="digital-identity.html">Identity</a>
+      <a href="digital-footprint.html">Footprint</a>
+      <a href="online-reputation.html">Reputation</a>
+      <a href="privacy-security.html">Privacy</a>
+      <a href="digital-wellbeing.html">Wellbeing</a>
+      <a href="scams-phishing.html">Scams</a>
+      <a href="gaming-safety.html">Gaming</a>
+      <a href="ai-misinformation.html">AI</a>
+      <a href="chatbot.html">Chatbot</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="container hero-inner">
+    <div class="reveal">
+      <div class="eyebrow">Digital Wellbeing · Cyber Safety · Citizenship</div>
+      <h1>Every Click Creates Your <span class="grad">Digital Identity</span></h1>
+      <p class="lead">The internet remembers what you post, share, like, comment on, and search for. Every action contributes to your digital identity — and it can shape your future opportunities.</p>
+      <div style="display:flex;gap:12px;flex-wrap:wrap">
+        <a class="btn btn-primary" href="#topics">Start learning →</a>
+        <a class="btn btn-ghost" href="chatbot.html">Ask the chatbot</a>
+      </div>
+    </div>
+    <div class="hero-visual reveal">
+      <img src="images/hero.jpg" alt="Digital identity illustration" />
+    </div>
+  </div>
+</header>
+
+<section id="topics">
+  <div class="container">
+    <div class="reveal">
+      <div class="eyebrow">Explore</div>
+      <h2 class="section-title">Eight topics. One smarter you.</h2>
+      <p class="section-sub">Each topic mixes clear explanations with an interactive game so the ideas actually stick.</p>
+    </div>
+    <div class="grid cols-3"></div>
+  </div>
+</section>
+
+<section class="panel-dark">
+  <div class="container reveal">
+    <div class="eyebrow">By the numbers</div>
+    <h2 class="section-title">The internet is bigger than you think.</h2>
+    <div class="stats" style="margin-top:30px">
+      <div class="stat"><div class="num"><span data-counter="5.4" data-suffix="B" data-decimals="1">0</span></div><div class="label">People online worldwide</div></div>
+      <div class="stat"><div class="num"><span data-counter="70" data-suffix="%">0</span></div><div class="label">Employers check social profiles</div></div>
+      <div class="stat"><div class="num"><span data-counter="300" data-suffix="M">0</span></div><div class="label">Photos uploaded daily</div></div>
+      <div class="stat"><div class="num"><span data-counter="2.5" data-suffix="s" data-decimals="1">0</span></div><div class="label">For info to spread online</div></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container split reveal">
+    <div>
+      <div class="eyebrow">Why it matters</div>
+      <h2 class="section-title">The internet remembers everything.</h2>
+      <p class="section-sub">Digital wellbeing isn't just screen time — it's about understanding how your online choices affect your safety, your reputation, your relationships, and your future opportunities.</p>
+      <ul class="feature-list">
+        <li>What you post today can be searched for years later.</li>
+        <li>Schools and employers regularly review online profiles.</li>
+        <li>Personal information can spread across the world in seconds.</li>
+        <li>Healthy digital habits protect your mental and physical wellbeing.</li>
+      </ul>
+    </div>
+    <img src="images/identity.jpg" alt="Digital identity card" loading="lazy" />
+  </div>
+</section>
+
+<div class="container">
+  <div class="cta-band reveal">
+    <div>
+      <h3>Got a question? Edge can help.</h3>
+      <div style="opacity:.9">Ask our offline chatbot anything about digital wellbeing.</div>
+    </div>
+    <a class="btn" href="chatbot.html">Open chatbot →</a>
+  </div>
+</div>
+
+<footer>
+  <div class="logo">◆ Digital Edge</div>
+  <div class="links">
+    <a href="digital-identity.html">Identity</a>
+    <a href="digital-footprint.html">Footprint</a>
+    <a href="online-reputation.html">Reputation</a>
+    <a href="privacy-security.html">Privacy</a>
+    <a href="digital-wellbeing.html">Wellbeing</a>
+    <a href="scams-phishing.html">Scams</a>
+    <a href="gaming-safety.html">Gaming</a>
+    <a href="ai-misinformation.html">AI</a>
+    <a href="chatbot.html">Chatbot</a>
+  </div>
+  <div>© Digital Edge. An educational project for safer, healthier digital lives.</div>
+</footer>
+
+<script>
+// Inject topic cards
+const topics = [
+  ['Digital Identity','Who you are online.','identity.jpg','digital-identity.html'],
+  ['Digital Footprint','The trail you leave.','footprint.jpg','digital-footprint.html'],
+  ['Online Reputation','How others see you.','reputation.jpg','online-reputation.html'],
+  ['Privacy & Security','Lock down your life.','privacy.jpg','privacy-security.html'],
+  ['Digital Wellbeing','Balance with tech.','wellbeing.jpg','digital-wellbeing.html'],
+  ['Scams & Phishing','Spot the traps.','scams.jpg','scams-phishing.html'],
+  ['Gaming Safety','Play safely online.','gaming.jpg','gaming-safety.html'],
+  ['AI & Misinformation','Fact vs fake.','ai.jpg','ai-misinformation.html'],
+];
+const grid = document.querySelector('#topics .grid');
+grid.innerHTML = topics.map(([t,d,img,href]) => `
+  <a class="card topic-card reveal" href="${href}">
+    <img src="images/${img}" alt="${t}" loading="lazy" />
+    <div class="body">
+      <h3>${t}</h3>
+      <p>${d}</p>
+      <div class="arrow">Learn more →</div>
+    </div>
+  </a>`).join('');
+</script>
+<script src="js/main.js"></script>
+</body>
+</html>
